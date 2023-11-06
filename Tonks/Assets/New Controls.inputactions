@@ -1,0 +1,52 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "0f929be4-728a-4141-9860-a69d82d5299c",
+            "actions": [
+                {
+                    "name": "Camera Left",
+                    "type": "Button",
+                    "id": "911f2366-9ace-4019-8904-0600c619dd5f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Camera Right",
+                    "type": "Button",
+                    "id": "a2b9d2ad-3e1e-4348-a4d8-9705edcbdde5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "541c946c-b53b-4b09-8868-29584f9b5fca",
+                    "path": "<Keyboard>/#(q)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7c08ddc-b5e7-4a35-988b-6d61f21e9e7b",
+                    "path": "<Keyboard>/#(e)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
