@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FaceMouse : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class FaceMouse : MonoBehaviour
     void Update()
     {
         //get a ray from the camera through the mouse
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        var pos = Mouse.current.position;
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(pos.x.ReadValue(), pos.y.ReadValue(), 0));
         RaycastHit info;
         Physics.Raycast(ray, out info, 15);
         Vector3 point = info.point;
@@ -23,6 +25,5 @@ public class FaceMouse : MonoBehaviour
 
 
         Debug.DrawRay(ray.origin, ray.direction*15);
-        Debug.Log(info.point);
     }
 }
